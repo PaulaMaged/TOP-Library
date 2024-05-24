@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.layout-container {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: minmax(50px, auto) minmax(300px, 1fr);
+}
+
+.title {
+    background-color: #f7f7f7;
+    width: 100%;
+    text-align: center;
+    vertical-align: super;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black;
+}
+
+.open-dialog {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: green;
+    color: white;
+    border-radius: 100%;
+    border: 0;
+    box-shadow: 0px 0px 4px black;
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.open-dialog:hover {
+    font-size: 20px;
+}
+
+.card-container {
+    background-color: lightskyblue;
+    display: grid;
+    gap: 3ch;
+    padding: 3ch;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.read:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.remove-button {
+    background-color: red;
+    border-radius: 5px;
+    margin-inline: auto;
+}
+
+.book-card {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 16px;
+    display: grid;
+    gap: 1ch;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 2ch;
+}
+
+.title-header {
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid grey;
+    background-color: #f7f7f7;
+}

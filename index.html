@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="layout-container">
+        <div class="title">Your Book Library</div>
+        <div class="card-container"></div>
+    </div>
+    <button class="open-dialog">+</button>;
+    <dialog id="book-dialog">
+        
+        <form id="book-addition">
+            <button class="cancel-button" value="cancel">X</button>
+            <div class="header">Add A New Book</div>
+            <label for="title" aria-label="required">*Title:</label>
+            <input type="text" id="title" minlength="2" autocomplete="on" required>
+            <label for="author" aria-label="required">*Author:</label>
+            <input type="text" id="author" name="author" minlength="3" required>
+            <label for="page-count">Number Of Pages:</label>
+            <input type="number" id="page-count"  min="5" max="2500" name="pageCount">
+            <legend>Did you read it?</legend>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="read">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="read">
+            <Button class="confirm-button">Add Book</Button>
+        </form>
+    </dialog>
+
+</body>
+</html>
